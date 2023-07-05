@@ -72,14 +72,12 @@ class ChatsPage extends StatelessWidget {
                               decoration: BoxDecoration(
                                 gradient: LinearGradient(
                                   colors: [
-                                    Color((Random().nextDouble() * 0xFFFFFF)
-                                                .toInt() <<
-                                            0)
-                                        .withOpacity(1.0),
+                                    Colors.primaries[Random()
+                                        .nextInt(Colors.primaries.length)],
                                     Colors.white,
                                   ],
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
+                                  begin: Alignment.bottomLeft,
+                                  end: Alignment.topRight,
                                 ),
                                 borderRadius: BorderRadius.circular(25.0),
                               ),
